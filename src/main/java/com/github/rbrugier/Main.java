@@ -3,8 +3,8 @@ package com.github.rbrugier;
 public class Main {
 
     public static void main(String[] args) {
-        ApplicationComponent appComponent = Dagger_ApplicationComponent.builder()
-                .tweeterModule(new TweeterModule("rbrugier"))
+        ApplicationComponent appComponent = DaggerApplicationComponent.builder()
+                .tweeterModule(new TweeterModule("ene__im"))
                 .build();
 
         Tweeter tweeter = appComponent.getTweeter();
